@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/contactus.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../library/bootstrap-4.5.3/css/bootstrap.min.css">
+    <script src="../library/jquery/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../library/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="icon" href="../image/CARVAN.png" type="image/gif" sizes="50x50">
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+          <input type="checkbox" id="show-search">
+          <input type="checkbox" id="show-menu">
+          <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+          <div id="logo">
+            <img src="../image/CARVAN.png" alt="">
+          </div>
+          <div class="content">
+            <ul class="links">
+              <li><a href="../htmls/aboutus.html">About</a></li>
+              <li>
+                <a href="../htmls/Range-of-cars.html" class="desktop-link">Range of Car</a>
+                <input type="checkbox" id="range-of-car">
+                <label for="range-of-car">Range of Car</label>
+                <ul>
+                  <li><a href="../htmls/Range-of-cars.html">Hybrid</a></li>
+                  <li><a href="../htmls/Range-of-cars.html">Sedan</a></li>
+                  <li><a href="../htmls/Range-of-cars.html">Hatchback</a></li>
+                  <li><a href="../htmls/Range-of-cars.html">SUV</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="desktop-link">Brands</a>
+                <input type="checkbox" id="Brands">
+                <label for="Brands">Brands</label>
+                <ul>
+                  <li>
+                    <a href="#" class="desktop-link">Audi</a>
+                    <input type="checkbox" id="Audi">
+                    <label for="Audi">Audi</label>
+                    <ul class="sub-menu">
+                      <li><a href="../htmls/detail.html?id=1">e-tron-sportback</a></li>
+                      <li><a href="../htmls/detail.html?id=2">A6</a></li>
+                      <li><a href="../htmls/detail.html?id=3">S6</a></li>
+                      <li><a href="../htmls/detail.html?id=4">Q3</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="desktop-link">KIA</a>
+                    <input type="checkbox" id="kia">
+                    <label for="kia">KIA</label>
+                    <ul>
+                      <li><a href="../htmls/detail.html?id=9">Rio</a></li>
+                      <li><a href="../htmls/detail.html?id=10">K5</a></li>
+                      <li><a href="../htmls/detail.html?id=11">Sorento Hybrid</a></li>
+                      <li><a href="../htmls/detail.html?id=12">Telluride</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="desktop-link">Toyota</a>
+                    <input type="checkbox" id="Toyota">
+                    <label for="Toyota">Toyota</label>
+                    <ul>
+                      <li><a href="../htmls/detail.html?id=5">Camry LE hybrid</a></li>
+                      <li><a href="../htmls/detail.html?id=6">COROLLA</a></li>
+                      <li><a href="../htmls/detail.html?id=7">C-HR</a></li>
+                      <li><a href="../htmls/detail.html?id=8">VENZA</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="desktop-link">Hyundai</a>
+                    <input type="checkbox" id="hyundai">
+                    <label for="hyundai">Hyundai</label>
+                    <ul>
+                      <li><a href="../htmls/detail.html?id=13">IONIQ Hybrid</a></li>
+                      <li><a href="../htmls/detail.html?id=14">VELOSTER</a></li>
+                      <li><a href="../htmls/detail.html?id=15">VELOSTER N</a></li>
+                      <li><a href="../htmls/detail.html?id=16">VENUE</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li><a href="../htmls/PreOwned-car.html">PreOwned Car</a></li>
+              <li><a href="../htmls/contactsus.html">Contact</a></li>
+            </ul>
+          </div>
+          <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+          <form action="#" class="search-box">
+            <input type="text" placeholder="Type Something to Search..." required>
+            <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+          </form>
+          <div class="account">
+            <div class="account-profile" onclick="menuToggle()">
+                <img src="../image/profile2.png" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="../htmls/login.html">Log In</a></li>
+                    <li><a href="../htmls/register.html">Register</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    <section class="contacts">
+        <div class="contents">
+            <h2>Contact Us</h2>
+    
+       
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fas fa-map-marked-alt"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>4676 Sugar Camp Road,<br>Owatonna, Minnesota, <br>55060</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fas fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p><a href="tel:0123456789">0123456789</a></p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="far fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p><a href="mailto:tests@gmail.com">tests@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form action="">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Your Phone</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Type your message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_info">
+            <div class="footer_width about col-md-4">
+                <div class="footer-email-form">
+                  <h2>Join our news letter</h2>
+                  <div oncontextmenu='return false' class='snippet-body'>
+                    <div class="modal-container container d-flex justify-content-center">
+                        <div class="row">
+                            <div class="col-md-6 div-modal">  
+                                <input class="input" type="text" placeholder="Enter your Email">
+                                <button type="button" class="btn btn-lg btn-warning btn-modal" data-toggle="modal" data-target="#myModal">Submit</button> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="card modal-card">
+                                <div class="text-right cross"> <i class="fa fa-times"></i> </div>
+                                <div class="card-body text-center"> <img src="../image/congratulations_icon.png" width="300px" height="300px">
+                                    <h4 class="cong" style="color: #000;">Thank you for subscribe</h4>
+                                    <p class="cong-modal" style="color: #000; font-size: 18px;">Congratulations on your successful registration!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                    <div class="wrapper-social">
+                      <div class="icon facebook">
+                         <div class="tooltip">
+                            Facebook
+                         </div>
+                         <span><i class="fab fa-facebook-f"></i></span>
+                      </div>
+                      <div class="icon twitter">
+                         <div class="tooltip">
+                            Twitter
+                         </div>
+                         <span><i class="fab fa-twitter"></i></span>
+                      </div>
+                      <div class="icon youtube">
+                         <div class="tooltip">
+                            YouTube
+                         </div>
+                         <span><i class="fab fa-youtube"></i></span>
+                      </div>
+                   </div>     
+            </div>
+    
+            <div class="footer_width link col-md-4">
+                <h2>Quick Link</h2>
+                <ul>
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="../htmls/Range-of-cars.html">Range of cars</a></li>
+                  <li><a href="../htmls/PreOwned-car.html">PreOwned</a></li>
+                  <li><a href="../htmls/aboutus.html">About Us</a></li>
+                  <li><a href="../htmls/contactsus.html">Contact Us</a></li>
+                  <li><a href="../htmls/sitemap.html">Site map</a></li>
+                </ul>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.0855121590807!2d-98.76110613447415!3d33.027877528458326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8653c3f02119d0d7%3A0x1ececcdfb63b8142!2sYoung%20County!5e0!3m2!1sen!2s!4v1625683921772!5m2!1sen!2s" width="350"  style="border:0; margin-left: 18px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="copy-right">
+            @  COPYRIGHT 2021 BY NH GROUP
+        </div>
+    </footer>
+    <script src="../Scripts/main.js"></script>
+</body>
+</html>

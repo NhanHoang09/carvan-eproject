@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CARVAN</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./library/jquery/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="./library/bootstrap-4.5.3/css/bootstrap.min.css">
+  <script src="./library/bootstrap-4.5.3/js/bootstrap.min.js"></script>
+  <script src="./library/jquery/jquery.counterup.min.js"></script>
+  <script src="./library/jquery/jquery.waypoints.js"></script>
+  <script src="./library/slick-1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" href="./library/fontawesome-free-5.15.3-web/css/all.min.css">
+  <link rel="stylesheet" href="./library/1.3.0/css/line-awesome.min.css">
+  <link rel="icon" href="./image/CARVAN.png" type="image/gif" sizes="50x50">
+
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+          <input type="checkbox" id="show-search">
+          <input type="checkbox" id="show-menu">
+          <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+          <div id="logo">
+            <img src="image/CARVAN.png" alt="">
+          </div>
+          <div class="content">
+            <ul class="links">
+              <li><a href="./htmls/aboutus.html">About</a></li>
+              <li>
+                <a href="./htmls/Range-of-cars.html" class="desktop-link">Range of Car</a>
+                <input type="checkbox" id="range-of-car">
+                <label for="range-of-car">Range of Car</label>
+                <ul>
+                  <li><a href="./htmls/Range-of-cars.html">Hybrid</a></li>
+                  <li><a href="./htmls/Range-of-cars.html">Sedan</a></li>
+                  <li><a href="./htmls/Range-of-cars.html">Hatchback</a></li>
+                  <li><a href="./htmls/Range-of-cars.html">SUV</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="desktop-link">Brands</a>
+                <input type="checkbox" id="Brands">
+                <label for="Brands">Brands</label>
+                <ul>
+                  <li>
+                    <a href="#" class="desktop-link">AUDI</a>
+                    <input type="checkbox" id="Audi">
+                    <label for="Audi">Audi</label>
+                    <ul class="sub-menu">
+                      <li><a href="./htmls/detail.html?id=0">e-tron-sportback</a></li>
+                      <li><a href="./htmls/detail.html?id=1">A6</a></li>
+                      <li><a href="./htmls/detail.html?id=2">S6</a></li>
+                      <li><a href="./htmls/detail.html?id=3">Q3</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="desktop-link">KIA</a>
+                    <input type="checkbox" id="kia">
+                    <label for="kia">KIA</label>
+                    <ul>
+                      <li>
+                        <!-- <a href="./htmls/detail.html?id=8">Rio</a> -->
+                        <a href="#" class="desktop-link">RIO</a>
+                        <input type="checkbox" id="rio">
+                        <label for="rio">RIO</label>
+                        <ul>
+                          <li><a href="">2017</a></li>
+                          <li><a href="">2020</a></li>
+                        </ul>
+
+                      </li>
+                      <li><a href="./htmls/detail.html?id=9">K5</a></li>
+                      <li><a href="./htmls/detail.html?id=10">Sorento Hybrid</a></li>
+                      <li><a href="./htmls/detail.html?id=11">Telluride</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="desktop-link">TOYOTA</a>
+                    <input type="checkbox" id="Toyota">
+                    <label for="Toyota">Toyota</label>
+                    <ul>
+                      <li><a href="./htmls/detail.html?id=4">Camry LE hybrid</a></li>
+                      <li><a href="./htmls/detail.html?id=5">COROLLA</a></li>
+                      <li><a href="./htmls/detail.html?id=6">C-HR</a></li>
+                      <li><a href="./htmls/detail.html?id=7">VENZA</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="desktop-link">HYUNDAI</a>
+                    <input type="checkbox" id="hyundai">
+                    <label for="hyundai">Hyundai</label>
+                    <ul>
+                      <li><a href="./htmls/detail.html?id=12">IONIQ Hybrid</a></li>
+                      <li><a href="./htmls/detail.html?id=13">VELOSTER</a></li>
+                      <li><a href="./htmls/detail.html?id=14">VELOSTER N</a></li>
+                      <li><a href="./htmls/detail.html?id=15">VENUE</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li><a href="./htmls/PreOwned-car.html">PreOwned Car</a></li>
+              <li><a href="./htmls/contactsus.html">Contact</a></li>
+            </ul>
+          </div>
+          <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+          <form action="#" class="search-box">
+            <input type="text" placeholder="Type Something to Search..." required>
+            <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+          </form>
+          <div class="account">
+            <div class="account-profile" onclick="menuToggle()">
+                <img src="./image/profile2.png" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="./htmls/login.html">Log In</a></li>
+                    <li><a href="./htmls/register.html">register</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    <div class="container-fluid" style="padding-left: 0; padding-right: 0;">
+      <div class="logo-img">
+      </div>
+        <div class="container title-content" >
+            <h2>CARVAN</h2>
+            <h3>Conquer every journey</h3>
+            <p>
+              Reliable choice for you.
+            </p>
+            <button><a href="./htmls/Range-of-cars.html">SEE MORE</a></button>
+        </div>
+      </div>
+    </div>
+      <!--End Of Header-->
+  </div>
+  <!--End OF Header-->
+
+  <!-- ----product introduction---- -->
+<div class="container-fluid ">
+  <div class="main-home">
+    <div class="home">
+        <h4 class="home__title">New Car for this mounth</h4>
+
+        <div class="home__img">
+            <img src="./image/2car2.png" alt="">
+        </div>
+
+        <div class="home__information">
+            <h2 class="home__subtitle">TOYOTA<br>CAMRY LE HYBRID</h2>
+            <p class="home__description">Hybrid Performance Camry Hybrid delivers impressive <br> performance with an available sport-tuned suspension<br> and added hybrid efficiency.</p>
+        </div>
+
+        <div class="box">
+            <div class="box__medium box--dark">
+                <i class="las la-tachometer-alt icon-box"></i>
+                <h3 class="box__medium-title d-inline">3.7</h3>
+                <span class="box__medium-description d-block">Sec.</span>
+                <span class="box__medium-detail">0-100 km/h</span>
+            </div>
+
+            <div>
+                <div class="box__small box--dark">
+                  <i class="lab la-superpowers icon-box icon-box--small"></i>
+                    <h3 class="box__small-title d-inline">325</h3>
+                    <span class="box__small-description d-block">km/h</span>
+                    <span class="box__small-detail">Top Speed</span>
+                </div>
+                <div class="box__small box--dark">
+                  <i class="fas fa-car icon-box icon-box--small"></i>
+                    <h3 class="box__small-title d-inline">8.000</h3>
+                    <span class="box__small-description d-block">r.p.m</span>
+                    <span class="box__small-detail">Power</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+</div>
+
+  <!-- ---------------------------------- -->
+
+  <section class="container article">
+      <h2 class="text-center">HOT Products</h2><br>
+      <div class="row" id="hot-products">
+    </div>
+  </section>
+  <!--end Of New Product-->
+  <div class="title-box">
+    <h1>Our Team</h1>
+  </div>
+    <div class="team-container">
+    <div class="team-profiles">
+      <div class="team-profile">
+        <img src="./image/team/team1.jpg" class="team-profile-img">
+        <h3 class="team-user-name">William</h3>
+        <h5>CEO</h5>
+        
+
+      </div>
+      <div class="team-profile">
+        <img src="./image/team/team2.jpg" class="team-profile-img">
+        <h3 class="team-user-name">Camila</h3>
+        <h5>Founder</h5>
+       
+      </div>
+      <div class="team-profile">
+        <img src="./image/team/team3.jpg" class="team-profile-img">
+
+        <h3 class="team-user-name">Isabella</h3>
+        <h5>Co-founder</h5>
+      
+
+      </div>
+    </div>
+  </div> 
+
+  <section id="services">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-4 user" >
+            <h1><span class="counter">20,000</span></h1>
+            <h3>HAPPY CLIENTS</h3>
+            <i class="fa fa-users"></i>
+          </div> 
+          <div class="col-md-4 city">
+            <h1><span class="counter ">100</span></h1>
+            <h3>OFFICE IN CITIES</h3>
+            <i class="fas fa-city"></i>
+          </div>
+          <div class="col-md-4 new-car">
+            <h1><span class="counter ">8,000</span></h1>
+            <h3>New Car</h3>
+            <i class="fas fa-car"></i>
+          </div>
+        </div>
+      </div>
+</section>
+<!--End Of Services-->
+<section class="article">
+  <div class="container py-5">
+    <h1 class="text-center">Best Seller</h1><br>
+    <div class="row">
+      <div class="col-lg-4 wow bounceIn" data-wow-delay="0.3s"> 
+    </div>
+    </div>
+  </div>
+</section>
+<div class="container">
+  <div class="row" id="products">
+  </div>
+  <div class="container">
+    <h2 class="text-center font-weight-bold">Our Partners</h2>
+    <section class="customer-logos slider">
+        <div class="slide"><img src="./image/logo-audi.png" alt="logo"></div>
+        <div class="slide"><img src="./image/logo-toyota.jpg" alt="logo"></div>
+        <div class="slide"><img src="./image/logo-kia.jpg" alt="logo"></div>
+        <div class="slide"><img src="./image/hyundai-logo.jpg" alt="logo"></div>
+        <div class="slide"><img src="./image/jeep-logo.jpg" alt="logo"></div>
+        <div class="slide"><img src="./image/logo-audi.png" alt="logo"></div>
+        <div class="slide"><img src="./image/logo-toyota.jpg" alt="logo"></div>
+        <div class="slide"><img src="./image/logo-kia.jpg" alt="logo"></div>
+    </section>
+</div>
+  <a href="#" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+</div>
+<!--End Of article-->
+<footer class="container-fluid">
+    <div class="footer_info">
+        <div class="footer_width about col-md-4">
+            <div class="footer-email-form">
+              <h2>Join our news letter</h2>
+              <div oncontextmenu='return false' class='snippet-body'>
+                <div class="modal-container container d-flex justify-content-center">
+                    <div class="row">
+                        <div class="col-md-6 div-modal">  
+                            <input class="input" type="text" placeholder="Enter your Email" required>
+                            <button type="button" class="btn btn-lg btn-warning btn-modal" data-toggle="modal" data-target="#myModal">Submit</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="card modal-card">
+                            <div class="text-right cross"> <i class="fa fa-times"></i> </div>
+                            <div class="card-body text-center"> <img src="./image/congratulations_icon.png" width="300px" height="300px">
+                                <h4 class="cong">Thank you for subscribe</h4>
+                                <p class="cong-modal">Congratulations on your successful registration!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+                <div class="wrapper-social">
+                  <div class="icon facebook">
+                     <div class="tooltip">
+                        Facebook
+                     </div>
+                     <span> <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a></span>
+                  </div>
+                  <div class="icon twitter">
+                     <div class="tooltip">
+                        Twitter
+                     </div>
+                     <span><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></span>
+                  </div>
+                  <div class="icon youtube">
+                     <div class="tooltip">
+                        YouTube
+                     </div>
+                     <span><a href="https://youtube.com/"><i class="fab fa-youtube"></i></a></span>
+                  </div>
+               </div>     
+        </div>
+
+        <div class="footer_width link col-md-4">
+            <h2>Quick Link</h2>
+            <ul>
+              <li><a href="./htmls/aboutus.html">About Us</a></li>
+              <li><a href="./htmls/PreOwned-car.html">PreOwned</a></li>
+              <li><a href="./htmls/Range-of-cars.html">Range of cars</a></li>
+              <li><a href="./htmls/contactsus.html">Contact Us</a></li>
+              <li><a href="./htmls/sitemap.html">Site map</a></li>
+            </ul>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.0855121590807!2d-98.76110613447415!3d33.027877528458326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8653c3f02119d0d7%3A0x1ececcdfb63b8142!2sYoung%20County!5e0!3m2!1sen!2s!4v1625683921772!5m2!1sen!2s" width="350"style="border:0; margin-left: 18px;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="copy-right">
+        @  COPYRIGHT 2021 BY NH GROUP
+    </div>
+</footer>
+<script src="./Scripts/data.js"></script>
+<script src="./Scripts/main.js"></script>
+<!-- GSAP -->
+<script src="./library/gsap.min.js"></script>
+
+<script>
+/*TITLE Y IMG*/
+gsap.from('.home__title', {opacity: -1, duration: 1.5, delay:2})
+gsap.from('.home__img', {opacity: 0, duration: 1, delay:2, x: 100})
+gsap.from('.home__information', {opacity: 0, duration: 1, delay:2, y: -30})
+/*BOX*/
+gsap.from('.box__medium', {opacity: 0, duration: 1.5, delay:1.3, y: -50})
+gsap.from('.box__small', {opacity: -1, duration: 1.5, delay:1.4, y: -50})
+  // -----Count up-----
+$('.counter').counterUp({
+    delay: 8,
+    time: 2000
+});
+$('.counter').addClass('animated fadeInDownBig');
+$('h3').addClass('animated fadeIn');
+
+// -----slideshow-----
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover:false,
+        responsive: [{
+            breakpoint: 768,
+            setting: {
+                slidesToShow:4
+            }
+        }, {
+            breakpoint: 520,
+            setting: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+
+</script>
+</body>
+</html>
+

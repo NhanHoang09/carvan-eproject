@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../library/fontawesome-free-5.15.3-web/css/all.min.css">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../library/bootstrap-4.5.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/detail.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="icon" href="../image/CARVAN.png" type="image/gif" sizes="50x50">
+    <title>Details</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+          <input type="checkbox" id="show-search">
+          <input type="checkbox" id="show-menu">
+          <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+          <div id="logo">
+            <a href="#"><img src="../image/CARVAN.png" alt=""></a>
+          </div>
+          <div class="content">
+            <ul class="links">
+              <li><a href="../htmls/aboutus.html">About</a></li>
+              <li>
+                <a href="../htmls/Range-of-cars.html" class="desktop-link">Range of Car</a>
+                <input type="checkbox" id="range-of-car">
+                <label for="range-of-car">Range of Car</label>
+                <ul>
+                  <li><a href="../htmls/Range-of-cars.html">Hybrid</a></li>
+                  <li><a href="../htmls/Range-of-cars.html">Sedan</a></li>
+                  <li><a href="../htmls/Range-of-cars.html">Hatchback</a></li>
+                  <li><a href="../htmls/Range-of-cars.html">SUV</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="desktop-link">Brands</a>
+                <input type="checkbox" id="Brands">
+                <label for="Brands">Brands</label>
+                <ul>
+                  <li>
+                    <a href="#" class="desktop-link">Audi</a>
+                    <input type="checkbox" id="Audi">
+                    <label for="Audi">Audi</label>
+                    <ul class="sub-menu">
+                      <li><a href="../htmls/detail.html?id=1">e-tron-sportback</a></li>
+                      <li><a href="../htmls/detail.html?id=2">A6</a></li>
+                      <li><a href="../htmls/detail.html?id=3">S6</a></li>
+                      <li><a href="../htmls/detail.html?id=4">Q3</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="desktop-link">KIA</a>
+                    <input type="checkbox" id="kia">
+                    <label for="kia">KIA</label>
+                    <ul>
+                      <li><a href="../htmls/detail.html?id=9">Rio</a></li>
+                      <li><a href="../htmls/detail.html?id=10">K5</a></li>
+                      <li><a href="../htmls/detail.html?id=11">Sorento Hybrid</a></li>
+                      <li><a href="../htmls/detail.html?id=12">Telluride</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="desktop-link">Toyota</a>
+                    <input type="checkbox" id="Toyota">
+                    <label for="Toyota">Toyota</label>
+                    <ul>
+                      <li><a href="../htmls/detail.html?id=5">Camry LE hybrid</a></li>
+                      <li><a href="../htmls/detail.html?id=6">COROLLA</a></li>
+                      <li><a href="../htmls/detail.html?id=7">C-HR</a></li>
+                      <li><a href="../htmls/detail.html?id=8">VENZA</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="desktop-link">Hyundai</a>
+                    <input type="checkbox" id="hyundai">
+                    <label for="hyundai">Hyundai</label>
+                    <ul>
+                      <li><a href="../htmls/detail.html?id=13">IONIQ Hybrid</a></li>
+                      <li><a href="../htmls/detail.html?id=14">VELOSTER</a></li>
+                      <li><a href="../htmls/detail.html?id=15">VELOSTER N</a></li>
+                      <li><a href="../htmls/detail.html?id=16">VENUE</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li><a href="../htmls/PreOwned-car.html">PreOwned Car</a></li>
+              <li><a href="../htmls/contactsus.html">Contact</a></li>
+            </ul>
+          </div>
+          <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+          <form action="#" class="search-box">
+            <input type="text" placeholder="Type Something to Search..." required>
+            <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+          </form>
+          <div class="account">
+            <div class="account-profile" onclick="menuToggle()">
+                <img src="../image/profile2.png" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="../htmls/login.html">Log In</a></li>
+                    <li><a href="../htmls/register.html">Register</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    <main>
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-xl-7">
+                    <div class="watch-content">
+                        <div class="row no-gutters">
+                            <div class="col-xl-2 watch-model">
+                                <p><img src="../image/imgonline-com-ua-Resize-ognpJGvwZk2o0rf.jpg" width="50" id="img1" alt=""></p>
+                                <p><img src="../image/imgonline-com-ua-Resize-6z16rg2BJ9wr.jpg" width="50" id="img2" alt=""></p>
+                                <p><img src="../image/imgonline-com-ua-Resize-ognpJGvwZk2o0rf.jpg" width="50" id="img3" alt=""></p>
+                                <p><img src="../image/imgonline-com-ua-Resize-6z16rg2BJ9wr.jpg" width="50" id="img4" alt=""></p>
+                                <p><img src="../image/imgonline-com-ua-Resize-ognpJGvwZk2o0rf.jpg" width="50" id="img5" alt=""></p>
+                            </div>
+                            <div class="col-xl-10 preview">
+                                <img  id="image" src="../image/imgonline-com-ua-Resize-6z16rg2BJ9wr.jpg" alt="img"    width="100%" class="img-fluid">
+                            </div>
+                          
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="card-body-des des">
+                            <h5  class="card-title">Description</h5>
+                            <p id="description" class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5">
+                    <div class="parameter">
+                        <h2 id="name" class="display-2">e-tron-sportback</h2>
+                        <p>Model: <span id="brand" >Audi</span></p>
+                        <hr>
+                        <h6>COLOR</h6>
+                        <div class="row no-gutters mt-4">
+                                <i class="fa fa-circle text-light"></i>
+                                <i class="fa fa-circle text-warning ml-3"></i>
+                                <i class="fa fa-circle text-dark ml-3"></i>
+                        </div>
+                        <hr>
+                        <table id="details" class="content-table">
+                            <tbody>
+                              <tr>
+                                <td>Condition:</td>
+                                <td>New</td>
+                                <td>Model:</td>
+                                <td>e-tron-sportback</td>
+                              </tr>
+                              <tr>
+                                <td>Price:</td>
+                                <td>$69,100</td>
+                                <td>Fuel:</td>
+                                <td>electric</td>
+                              </tr>
+                              <tr>
+                                <td>Body Style:</td>
+                                <td>Hybrid</td>
+                                <td>Doors:</td>
+                                <td>5</td>
+                              </tr>
+                              <tr>
+                                <td>Power:</td>
+                                <td>402 hp/490 lb-ft</td>
+                                <td>Make:</td>
+                                <td>Audi</td>
+                              </tr>
+                              <tr>
+                                <td>Year:</td>
+                                <td>2021</td>
+                                <td>Mileage:</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>Color:</td>
+                                <td>Brilliant Black</td>
+                                <td>Transmission:</td>
+                                <td>Automatic</td>
+                              </tr>
+                              <tr>
+                                <td>Battery:</td>
+                                <td>95 kWh</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        <hr>
+                        <div class="price">
+                            <h2 >$<span id="price">1,250</span></h2>
+                        </div>
+                        <div class="cart">
+                            <div class="row no-gutters contacts">
+                                <button class="btn add-to-cart"><i class="fas fa-phone"></i><a href="tel:0123456789">CALL US</a></button>
+                                <button class="btn add-to-cart"><i class="fas fa-envelope"></i><a href="mailto:test@gmail.com">EMAIL US</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        <hr>
+        <h3 class="title">Similar Product</h3>
+        <div class="slide-container">
+            <img id="slide-left" class="arrow" src="../image/arrow-left.png">
+            <section class="container-fluid" id="slider">
+                <div id="products">
+                </div>
+            </section>
+            <img id="slide-right" class="arrow" src="../image/arrow-right.png">
+        </div>
+    </main>
+    <footer>
+        <div class="footer_info">
+            <div class="footer_width about col-md-4">
+                <div class="footer-email-form">
+                  <h2>Join our news letter</h2>
+                  <div oncontextmenu='return false' class='snippet-body'>
+                    <div class="modal-container container d-flex justify-content-center">
+                        <div class="row">
+                            <div class="col-md-6 div-modal">  
+                                <input class="input" type="text" placeholder="Enter your Email">
+                                <button type="button" class="btn btn-lg btn-warning btn-modal" data-toggle="modal" data-target="#myModal">Submit</button> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="card modal-card">
+                                <div class="text-right cross"> <i class="fa fa-times"></i> </div>
+                                <div class="card-body-des text-center"> <img src="../image/congratulations_icon.png" width="300px" height="300px">
+                                    <h4 class="cong" style="color: #000;">Thank you for subscribe</h4>
+                                    <p class="cong-modal " style="color: #000; font-size: 18px;">Congratulations on your successful registration!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                    <div class="wrapper-social">
+                      <div class="icon facebook">
+                         <div class="tooltip">
+                            Facebook
+                         </div>
+                         <span><i class="fab fa-facebook-f"></i></span>
+                      </div>
+                      <div class="icon twitter">
+                         <div class="tooltip">
+                            Twitter
+                         </div>
+                         <span><i class="fab fa-twitter"></i></span>
+                      </div>
+                      <div class="icon youtube">
+                         <div class="tooltip">
+                            YouTube
+                         </div>
+                         <span><i class="fab fa-youtube"></i></span>
+                      </div>
+                   </div>     
+            </div>
+    
+            <div class="footer_width link col-md-4">
+                <h2>Quick Link</h2>
+                <ul>
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="../htmls/Range-of-cars.html">Range of cars</a></li>
+                  <li><a href="../htmls/PreOwned-car.html">PreOwned</a></li>
+                  <li><a href="../htmls/aboutus.html">About Us</a></li>
+                  <li><a href="../htmls/contactsus.html">Contact Us</a></li>
+                  <li><a href="../htmls/sitemap.html">Site map</a></li>
+                </ul>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.0855121590807!2d-98.76110613447415!3d33.027877528458326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8653c3f02119d0d7%3A0x1ececcdfb63b8142!2sYoung%20County!5e0!3m2!1sen!2s!4v1625683921772!5m2!1sen!2s" width="350" style="border:0; margin-left: 18px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="copy-right">
+            @  COPYRIGHT 2021 BY NH GROUP
+        </div>
+    </footer>
+    <script src="../Scripts/data.js"></script>
+    <script src="../Scripts/main.js"></script>
+    <script src="../library/jquery/jquery-3.6.0.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="../library/bootstrap-4.5.3/js/bootstrap.bundle.min.js"></script>
+  <script src="../Scripts/detail.js"></script>
+</body>
+</html>
