@@ -484,13 +484,13 @@ color: #ff5d94;
 .title-content{
     position: absolute;
     left: 0;
-    top: 80%;
+    top: 50%;
 }
 
 
 .title-content h2{
-    /* margin-left: 12px; */
-    margin-left: -800px;
+    position: absolute;
+    top: -60%;
     font-size: 70px;
     color: #d40219;
     font-weight: 700;
